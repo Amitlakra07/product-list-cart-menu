@@ -5,72 +5,167 @@
     font-family: sans-serif;
 }
 
-.container {
+body {
+    background-color: var(--Rose100);
+}
+
+:root {
+    --pureRed: hsl(14, 86%, 42%);
+    --pureGreen: hsl(159, 69%, 38%);
+    --Rose50: hsl(20, 50%, 98%);
+    --Rose100: hsl(13, 31%, 94%);
+    --Rose300: hsl(14, 25%, 72%);
+    --Rose400: hsl(7, 20%, 60%);
+    --Rose500: hsl(12, 20%, 44%);
+    --Rose900: hsl(14, 65%, 9%);
+}
+
+/* .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 50%;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 40px 1fr 1fr 1fr;
+    width: calc(100% - 20%);
     gap: 12px;
+    margin: 40px;
+}
+
+h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 #food__item__1 {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 #food__item__2 {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 #food__item__3 {
     grid-column: 3/4;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 #food__item__4 {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 #food__item__5 {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 #food__item__6 {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 #food__item__7 {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 4/5;
 }
 
 #food__item__8 {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 4/5;
 }
 
-#food__item__7 {
+#food__item__9 {
     grid-column: 3/4;
-    grid-row: 3/4;
+    grid-row: 4/5;
 }
 
 .food__item img {
     width: 100%;
 }
 
+.cart__container {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.cart__container h2 {
+    margin: 20px 15px;
+}
+
+.cart__container span.cart__img {
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    left: 90px;
+    top: 35px;
+}
+
+.cart__container .cart__bottom__info {
+    margin: 30px 60px;
+}
+
 .food__item button {
-    padding: 8px 18px;
+    padding: .4rem 1rem;
     position: relative;
     top: -26px;
     left: 50px;
     z-index: 9999;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 .food__item button span img {
     width: 14px;
     height: 14px;
+}
+
+.container .food__item h4 {
+    color: var(--Rose300);
+    font-weight: 300;
+    margin-top: -16px;
+}
+
+.container .food__item h2 {
+    font-size: 1.2rem;
+    color: var(--Rose900);
+    margin: 6px 0px;
+}
+
+.container .food__item p{
+    color: var(--pureRed);
+}
+
+.container .cart__container {
+    background-color: var(--Rose50);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    height: 270px;
+}
+
+.container .cart__container h2{
+    color: var(--pureRed);
+}
+
+.container .cart__container .cart__bottom__info{
+    color: var(--Rose400);
+} */
+
+/* Order Confirmed Page */
+main .order__confirmed {
+    background-color: var(--Rose50);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 500px;
+    margin: 60px auto;
+}
+
+main .order__confirmed .confirmed__img {
+    max-width: 60px;
+    max-height: 48px;
+    display: inline-block;
+}
+
+main .order__confirmed .confirmed__img img {
+    width: 65%;
 }

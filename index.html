@@ -26,8 +26,8 @@
 
 <body>
   <main class="main">
-    <h1>Desserts</h1>
-    <div class="container">
+    <!-- <div class="container">
+      <h1>Desserts</h1>
       <div class="food__item" id="food__item__1">
         <img src="./assets/images/image-waffle-desktop.jpg" alt="">
         <button>
@@ -136,10 +136,79 @@
         <h2>Vanilla Panna Cotta</h2>
         <p>$6.50</p>
       </div>
+      <div class="cart__container">
+        <h2>Your Cart ( Quantity )</h2>
+        <span class="cart__img">
+          <img src="./assets/images/illustration-empty-cart.svg" alt="">
+        </span>
+        <p class="cart__bottom__info">
+          Your added items will appear here
+        </p>
+      </div>
+    </div> -->
+    <div class="order__confirmed">
+      <span class="confirmed__img">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="">
+      </span>
+      <h2>Order Confirmed</h2>
+      <h5>We hope you enjoy your food!</h5>
+      <div class="confirmed__list__item">
+        <ul class="unorder__list__item">
+          <li>
+            <div class="thumbnail__img__container">
+              <span class="thumbnail__img">
+                <img src="./assets/images/image-tiramisu-thumbnail.jpg" alt="">
+              </span>
+              <div class="confirmed__item__name">
+                <h4>Classic Tiramisu</h4>
+                <div class="confirmed__quantity">
+                  <p class="item__quantity">1x</p>
+                  <p class="price">@ 5.50</p>
+                </div>
+              </div>
+            </div>
+            <p class="quantity__price">$5.50</p>
+          </li>
+          <li>
+            <div class="thumbnail__img__container">
+              <span class="thumbnail__img">
+                <img src="./assets/images/image-creme-brulee-thumbnail.jpg" alt="">
+              </span>
+              <div class="confirmed__item__name">
+                <h4>Vanilla Bean Crème Brulee</h4>
+                <div class="confirmed__quantity">
+                  <p class="item__quantity">4x</p>
+                  <p class="price">@ 7.00</p>
+                </div>
+              </div>
+            </div>
+            <p class="quantity__price">$28.00</p>
+          </li>
+          <li>
+            <div class="thumbnail__img__container">
+              <span class="thumbnail__img">
+                <img src="./assets/images/image-panna-cotta-thumbnail.jpg" alt="">
+              </span>
+              <div class="confirmed__item__name">
+                <h4>Vanilla Panna Cotta</h4>
+                <div class="confirmed__quantity">
+                  <p class="item__quantity">2x</p>
+                  <p class="price">@ 6.50</p>
+                </div>
+              </div>
+            </div>
+            <p class="quantity__price">$13.00</p>
+          </li>
+        </ul>
+        <div class="total">
+          <p class="order__total">Order Total</p>
+          <p class="total__price">$46.50</p>
+        </div>
+      </div>
+      <button id="new__order">Start New Order</button>
     </div>
   </main>
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
