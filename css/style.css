@@ -156,7 +156,8 @@ main .order__confirmed {
     border: 1px solid transparent;
     border-radius: 12px;
     padding: 16px;
-    max-width: 500px;
+    max-width: 350px;
+    max-height: 475px;
     margin: 60px auto;
 }
 
@@ -168,4 +169,89 @@ main .order__confirmed .confirmed__img {
 
 main .order__confirmed .confirmed__img img {
     width: 65%;
+}
+
+main .order__confirmed h2 {
+    font-size: 1.4rem;
+    padding: 12px 0px;
+}
+
+main .order__confirmed h5 {
+    color: var(--Rose300);
+    padding-bottom: 12px;
+}
+
+main .order__confirmed .confirmed__list__item {
+    background-color: var(--Rose100);
+    width: 100%;
+    height: 270px;
+    padding: 0px 12px;
+    border-radius: 12px;
+}
+
+main .order__confirmed .confirmed__list__item .unorder__list__item li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+main .order__confirmed .confirmed__list__item .unorder__list__item li .thumbnail__img__container {
+    display: flex;
+    gap: 12px;
+}
+
+
+main .order__confirmed .confirmed__list__item .unorder__list__item li .thumbnail__img__container .confirmed__item__name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .order__confirmed .confirmed__list__item .unorder__list__item li .thumbnail__img__container .confirmed__item__name .confirmed__quantity {
+    display: flex;
+    gap: 12px;
+}
+
+main .order__confirmed .confirmed__list__item .unorder__list__item li .thumbnail__img__container .thumbnail__img {
+    max-width: 40px;
+    max-height: 40px;
+    display: inline-block;
+}
+
+main .order__confirmed .confirmed__list__item .unorder__list__item li .thumbnail__img__container .thumbnail__img img {
+    max-width: 100%;
+}
+
+.order__confirmed .confirmed__list__item .unorder__list__item li .thumbnail__img__container .confirmed__item__name .confirmed__quantity .item__quantity {
+    color: var(--pureRed);
+}
+
+.order__confirmed .confirmed__list__item .unorder__list__item li .thumbnail__img__container .confirmed__item__name .confirmed__quantity .price{
+    color: var(--Rose300);
+}
+
+.order__confirmed .confirmed__list__item .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.order__confirmed .confirmed__list__item .total .order__total{
+    color: var(--Rose500);
+}
+
+.order__confirmed .confirmed__list__item .total .total__price{
+    font-weight: 700;
+    color: var(--Rose900);
+}
+
+.order__confirmed #new__order {
+    padding: 8px 108px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 20px 0px;
+    background-color: var(--pureRed);
+    color: var(--Rose50);
 }
